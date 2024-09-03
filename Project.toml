@@ -1,18 +1,23 @@
 name = "LandSea"
 uuid = "cbf7bb22-a1a6-46cb-8b24-174e3bc5fc04"
 authors = ["Nathanael Wong <natgeo.wong@outlook.com>"]
-version = "1.0.0-DEV"
+version = "0.1.0"
 
 [deps]
 Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
-GeoRegionGrids = "8d0fa254-fcf7-4535-a155-176873df7baa"
+GeoRegions = "8d0fa254-fcf7-4535-a155-176873df7baa"
 ImageFiltering = "6a3955dd-da59-5b1f-98d4-e7296123deb5"
 Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
 NCDatasets = "85f8d34a-cbdd-5861-8df4-14fed0d494ab"
 Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
 
 [compat]
-julia = "1"
+GeoRegions = "^7"
+ImageFiltering = "0.7"
+NCDatasets = "0.14"
+PolygonOps = "0.1"
+Reexport = "1"
+julia = "^1.6"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
