@@ -26,7 +26,7 @@ abstract type LandSeaData end
 """
     LandSeaTopo <: LandSeaData
 
-Text
+A LandSea Dataset that also contains information on the topographic height.
 
 A `LandSeaTopo` type will also contain the following field:
 * `z` - Array containing data regarding the Orographic Height in meters. NaN is outside the bounds of the GeoRegion
@@ -41,7 +41,7 @@ end
 """
     LandSeaFlat <: LandSeaData
 
-Text
+A LandSea Dataset that contains only information on the land-sea mask and no topography.
 """
 struct LandSeaFlat{FT1<:Real,FT2<:Real} <: LandSeaData
     lon :: Vector{FT1}
@@ -51,7 +51,12 @@ end
 
 modulelog() = "$(now()) - LandSea.jl"
 
-getLandSea() = "$(modulelog()) - There is a getLandSea() dummy-function in LandSea.jl, so that it can be extended by other packages"
+"""
+    getLandSea() -> nothing
+
+A dummy function that can be extended by other packages that use LandSea.jl.
+"""
+getLandSea() = @info "$(modulelog()) - There is a getLandSea() dummy-function in LandSea.jl, so that it can be extended by other packages"
 
 # include("smooth.jl")
 include("show.jl")
