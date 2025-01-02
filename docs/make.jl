@@ -7,8 +7,10 @@ makedocs(;
     modules=[LandSea],
     authors="Nathanael Wong <natgeo.wong@outlook.com>",
     sitename="LandSea.jl",
+    doctest  = false,
+    warnonly = true,
     format=Documenter.HTML(;
-        canonical="https://natgeo-wong.github.io/LandSea.jl",
+        canonical="https://github.com/GeoRegionsEcosystem/LandSea.jl",
         edit_link="main",
         assets=String[],
     ),
@@ -18,6 +20,8 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/natgeo-wong/LandSea.jl",
-    devbranch="main",
+    repo="github.com/GeoRegionsEcosystem/LandSea.jl",
+    target    = "build", # this is where Vitepress stores its output
+    devbranch = "main",
+    branch    = "gh-pages",
 )
