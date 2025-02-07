@@ -52,11 +52,11 @@ end
 modulelog() = "$(now()) - LandSea.jl"
 
 """
-    getLandSea() -> nothing
+    getLandSea(gds::GriddedDataset, geo::GeoRegion) -> nothing / LandSeaData
 
-A dummy function that can be extended by other packages that use LandSea.jl.
+Downloads a LandSea Dataset to a local repository defined in `gds.path` for a GeoRegion defined by `geo`.
 """
-getLandSea() = @info "$(modulelog()) - There is a getLandSea() dummy-function in LandSea.jl, so that it can be extended by other packages"
+function getLandSea end
 
 # include("smooth.jl")
 include("show.jl")
