@@ -52,9 +52,9 @@ end
 modulelog() = "$(now()) - LandSea.jl"
 
 """
-    getLandSea(gds::GriddedDataset, geo::GeoRegion) -> nothing / LandSeaData
+    getLandSea
 
-Downloads a LandSea Dataset to a local repository defined in `gds.path` for a GeoRegion defined by `geo`.
+An extensible function type to retrieve LandSea Datasets. You can use this function name in your packages if you want to retrieve a specific LandSea dataset.
 """
 function getLandSea end
 
