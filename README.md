@@ -9,7 +9,7 @@
     <img alt="Repo Status" src="https://www.repostatus.org/badges/latest/active.svg?style=flat-square" />
   </a>
   <a href="https://github.com/GeoRegionsEcosystem/LandSea.jl/actions/workflows/CI.yml">
-    <img alt="GitHub Actions" src="https://github.com/GeoRegionsEcosystem/LandSea.jl/actions/workflows/ci.yml/badge.svg?branch=main&style=flat-square">
+    <img alt="GitHub Actions" src="https://github.com/GeoRegionsEcosystem/LandSea.jl/actions/workflows/CI.yml/badge.svg?branch=main&style=flat-square">
   </a>
   <br>
   <a href="https://mit-license.org">
